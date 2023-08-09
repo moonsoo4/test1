@@ -1,0 +1,1315 @@
+@import url(font.css);
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@font-face {
+    font-family: 'SeoulHangangM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-position: right 700px;
+    max-width: 1920px;
+    position: relative;
+}
+
+.lineBg{
+    position: absolute;
+    top: 700px;
+    right: 0;
+    z-index: -100;
+}
+.lineBg img{
+    opacity: 0.7;
+}
+body button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+section h4{
+    font-size: 50px;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 800;
+}
+section .conceptArea{
+    display: flex;
+    justify-content: center;
+    gap: 215px;
+    padding-top: 60px;
+    text-align: center;
+}
+
+/* header */
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    min-width: 100%;
+    /* min-height: 100%; */
+    font-family: Montserrat, sans-serif;
+    /* margin-bottom: 100px; */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* overflow: hidden; */
+    z-index: 9999;
+}
+.inner {
+    width: 1720px;
+    margin: 0 auto;
+}
+.inner nav{
+    padding: 30px 0;
+    width: 100%;
+}
+.inner nav ul{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: right;
+    gap: 36px;
+    font-size: 24px;
+    font-weight: 800;
+}
+header nav ul a{
+    position: relative;
+}
+header nav ul a:after{
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    display: block;
+    background-color: #E5F9B7;
+    transition: all 0.5s
+}
+header nav ul a:hover::after{
+    width: 100%;
+}
+
+.topVisual{
+    position: relative;
+    font-family: Montserrat, sans-serif;
+    overflow: hidden;
+}
+.topVisual strong{
+    position: absolute;
+    top: 90px;
+    left: -88px;
+    font-size: 220px;
+    font-weight: 900;
+}
+.topVisual em{
+    position: absolute;
+    top: 330px;
+    right: -82px;
+    font-size: 210px;
+    font-weight: 900;
+}
+
+.projectArea{}
+.projectArea .projectShortcut{
+    display: flex;
+    padding-top: 472px;
+    gap: 20px;
+}
+.projectArea .projectShortcut li{}
+.projectArea .projectShortcut button{
+    font-weight: 800;
+    font-size: 30px;
+}
+
+
+/* selfIntroPage */
+.selfIntroPage{
+    margin-top: 40px;
+    padding-top: 40px;
+}
+.selfIntroPage .inner{
+    display: flex;
+    justify-content: space-between;
+}
+.selfIntroPage .introTxt{
+    width: 1000px;
+    /* height: 240px; */
+    border: 2px solid pink;
+}
+.selfIntroPage .introTxt strong{
+    font-size: 30px;
+}
+.selfIntroPage .introTxt p{
+    padding-top: 24px;
+    font-size: 44px;
+}
+.selfIntroPage .introBtm{
+    display: flex;
+    gap: 450px;
+    /* justify-content: space-between; */
+}
+.selfIntroPage .tools{}
+.selfIntroPage .tools strong{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: Montserrat, sans-serif;
+}
+.selfIntroPage .tools .toolsWrap{
+    text-align: center;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+.selfIntroPage .tools .toolsWrap li{
+    width: 96px;
+    height: 96px;
+    line-height: 96px;
+    border-radius: 48px;
+    padding: 10px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.selfIntroPage .tools .toolsWrap li:hover{
+    opacity: 1;
+    transition: 0.4s;
+}
+.selfIntroPage .tools .toolsWrap .imgSkill {
+    display: flex;
+    margin-bottom: 30px;
+}
+.selfIntroPage .tools .toolsWrap img{
+    width: 90px;
+    height: 90px;
+    display: block;
+}
+.selfIntroPage .tools .toolsWrap .imgSkill li{}
+.selfIntroPage .tools .toolsWrap .imgSkill li strong{}
+.selfIntroPage .tools .toolsWrap .imgSkill li div{
+    width: 100%;
+    height: 100%;
+}
+.selfIntroPage .tools .toolsWrap .imgSkill li div img{}
+
+.selfIntroPage .tools .toolsWrap .webSkill {display: flex;}
+.selfIntroPage .tools .toolsWrap .webSkill li{}
+
+
+
+/* important section */
+.important{
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    vertical-align: middle;
+    padding-top: 40px;
+}
+.important h3{
+    font-size: 50px;
+    font-weight: 800;
+    font-family: Montserrat, sans-serif;
+}
+.important ul{
+    display: flex;
+    justify-content: center;
+    gap: 271px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 30px 0 80px 0;
+}
+.important ul li{
+    position: relative;
+    padding: 60px 55px;
+    box-sizing: border-box;
+    width: 325px;
+    height: 320px;
+    border: 10px solid #fff;
+    border-radius: 5px;
+}
+.important ul .on1::after{
+    position: absolute;
+    right: -160px;
+    top: 110px;
+    content: '';
+    width: 50px;
+    height: 70px;
+    background: url(../images/right.png) no-repeat 100%;
+}
+.important ul .on2::after{
+    position: absolute;
+    right: -160px;
+    top: 110px;
+    content: '';
+    width: 50px;
+    height: 70px;
+    background: url(../images/right.png) no-repeat 100%;
+}
+.important ul li strong{
+    font-size: 32px;
+    font-family: Montserrat, sans-serif;
+}
+.important ul li p{
+    margin-top: 48px;
+    font-size: 24px;
+    line-height: 1.3;
+    font-family: 'Pretendard-Regular';
+}
+
+
+
+/* contentsIntro section */
+.contentsIntro{}
+.contentsIntro h4{
+    padding-top: 80px;
+}
+.contentsIntro .graphImg{
+    padding-top: 125px;
+    font-size: 0;
+}
+.contentsIntro .graphImg img{
+    width: 100%;
+}
+
+
+/* 공통 */
+.contentsIntro .circle{
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: #D9D9D9;
+    display: inline-block;
+    cursor: pointer;
+}
+.contentsIntro .circle:hover{
+    background-color: #E5F9B7;
+    transition: 0.3s linear;
+}
+.contentsIntro strong{
+    font-size: 28px;
+    font-family: 'Pretendard-Regular';
+    font-weight: 600;
+}
+.contentsIntro span{
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    margin: 8px 0;
+    display: block;
+}
+.contentsIntro p{
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+.contentsIntro .seoul p:hover,
+.contentsIntro .con p:hover,
+.contentsIntro .con2 p:hover{
+    color: #000;
+    font-weight: 700;
+    transition: 0.3s linear;
+}
+
+/* 공통 End*/
+
+/* NAMU TECH */
+.contentsIntro{position: relative;}
+.contentsIntro .namu{
+    position: absolute;
+    left: 138px;
+    top: 160px;
+    width: 150px;
+    height: 310px;
+    text-align: center;
+}
+.contentsIntro .namu strong{}
+.contentsIntro .namu span{}
+
+.contentsIntro .namu .circle{}
+.contentsIntro .namu .circle:hover{}
+
+.contentsIntro .namu p{
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+.contentsIntro .namu p:hover{
+    color: #000;
+    font-weight: 700;
+    transition: 0.3s linear;
+}
+.contentsIntro .namu .concept{padding-top: 8px;}
+.contentsIntro .namu .font{padding: 14px 0;}
+.contentsIntro .namu .mainPage{padding: 14px 0;}
+/* NAMU TECH END*/
+
+
+/* SEOUL CITY HALL */
+.contentsIntro .seoul{
+    position: absolute;
+    left: 628px;
+    top: 455px;
+    width: 150px;
+    height: 310px;
+    /*background: orange;*/
+    text-align: center;
+}
+.contentsIntro .seoul p{
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+.contentsIntro .seoul .concept{}
+
+.contentsIntro .seoul .font{padding: 14px 0;}
+.contentsIntro .seoul .mainPage {padding: 14px 0;}
+.contentsIntro .seoul .subPage{margin-bottom: 10px;}
+
+.contentsIntro .seoul .circle{}
+.contentsIntro .seoul .circle:hover{}
+
+.contentsIntro .seoul strong{
+    display: block;
+    font-size: 28px;
+    font-family: 'Pretendard-Regular';
+    font-weight: 600;
+}
+.contentsIntro .seoul span{
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    margin: 8px 0;
+    display: block;
+}
+/* SEOUL CITY HALL END */
+
+/* CON1 */
+.contentsIntro .con{
+    position: absolute;
+    left: 1108px;
+    top: 170px;
+    width: 150px;
+    height: 310px;
+    /*background: dodgerblue;*/
+    text-align: center;
+}
+.contentsIntro .con strong{}
+.contentsIntro .con span{}
+.contentsIntro .con .circle{}
+.contentsIntro .con .circle:hover{}
+.contentsIntro .con p{}
+
+.contentsIntro .con .concept{padding-top: 8px;}
+.contentsIntro .con .font{padding: 14px 0;}
+.contentsIntro .con .mainPage{padding: 14px 0;}
+
+/* CON1 end */
+
+/* con2 */
+.contentsIntro .con2{
+    position: absolute;
+    left: 1640px;
+    top: 450px;
+    width: 150px;
+    height: 310px;
+    text-align: center;
+}
+.contentsIntro .con2 p{
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+.contentsIntro .con2 .concept{}
+
+.contentsIntro .con2 .font{padding: 14px 0;}
+.contentsIntro .con2 .mainPage {padding: 14px 0;}
+.contentsIntro .con2 .subPage{margin-bottom: 10px;}
+
+.contentsIntro .con2 .circle{}
+.contentsIntro .con2 .circle:hover{}
+
+.contentsIntro .con2 strong{
+    display: block;
+    font-size: 28px;
+    font-family: 'Pretendard-Regular';
+    font-weight: 600;
+}
+.contentsIntro .con2 span{
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    margin: 8px 0;
+    display: block;
+}
+/* con2 end*/
+
+
+/* firstProject section */
+.firstProject{
+    height: 560px;
+    background: rgba(244, 244, 244, 0.7);
+}
+.projectWrap{
+    width: 1180px;
+    margin: 0 auto;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.projectWrap .titleArea{
+    width: 420px;
+    height: 100%;
+}
+.projectWrap .titleArea h2{
+    /* font-size: 34px; */
+    font-size: 42px;
+    font-family: 'MinSans-Medium', sans-serif;
+    padding-top: 82px;
+}
+.projectWrap .titleArea strong{
+    /* font-size: 22px;
+    font-size: 26px;
+    font-family: 'MinSans-Regular', sans-serif;
+    display: block;
+    padding-top: 24px;
+    line-height: 1.2; */
+}
+.projectWrap .titleArea .info{
+    padding: 24px 0;
+    box-sizing: border-box;
+}
+.projectWrap .titleArea .info em{
+    /* font-size: 16px; */
+    font-size: 18px;
+    font-family: 'MinSans-Regular';
+    display: block;
+    line-height: 1.7;
+}
+.projectWrap .titleArea .info em.montFont{
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 500;
+}
+.projectWrap .titleArea .enterPage{}
+.projectWrap .titleArea .enterPage a{
+    padding: 15px;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 500;
+    margin-right: 10px;
+    background-color: #E5F9B7;
+    border-radius: 25px;
+}
+.projectWrap .titleArea .enterPage a:last-child{margin-right: 0;}
+.projectWrap .titleArea p{
+    padding-top: 24px;
+    font-size: 14px;
+    font-size: 16px;
+    font-family: 'MinSans-Regular';
+    line-height: 1.3;
+}
+
+.projectWrap .imgArea{
+    width: 588px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.projectWrap .imgArea div:nth-child(1) img{
+    height: 100%;
+    height: 460px;
+    /* background-color: green; */
+    /* border: 2px solid red; */
+    /* rotate: -20deg; */
+}
+.projectWrap .imgArea div:nth-child(2) img{
+    /* width: 195px; */
+    height: 450px;
+    rotate: 20deg;
+}
+.projectWrap .imgArea div img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.firstProjectConcept{
+    border-bottom: 1px solid gray;
+    padding: 55px 0 80px 0;
+}
+.firstProjectConcept .inner{
+    width: 1180px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.firstProjectConcept .conceptArea .circle{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.firstProjectConcept .conceptArea .concept1 em{
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 30px);
+    transform: translate(-50%, -50%);
+}
+.firstProjectConcept .conceptArea em{
+    font-size: 30px;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 500;
+}
+.firstProjectConcept .conceptArea strong{
+    padding-top: 26px;
+    box-sizing: border-box;
+    display: block;
+    /* text-align: center; */
+    font-family: 'MinSans-Regular';
+    font-size: 28px;
+}
+.firstProjectConcept .conceptArea .concept1{
+    position: relative;
+}
+.firstProjectConcept .conceptArea .concept1 .con1{
+    border: 2px solid rgba(198, 198, 198, 0.7);
+    box-sizing: border-box;
+}
+.firstProjectConcept .conceptArea .concept2{
+    position: relative;
+}
+.firstProjectConcept .conceptArea .concept2 em{
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 30px);
+    transform: translate(-50%, -50%);
+}
+.firstProjectConcept .conceptArea .concept2 .con2{
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+.firstProjectConcept .conceptArea .concept3{
+    position: relative;
+}
+.firstProjectConcept .conceptArea .concept3 em{
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 30px);
+    transform: translate(-50%, -50%);
+}
+.firstProjectConcept .conceptArea .concept3 .con3{
+    border: 4px dotted black;
+    box-sizing: border-box;
+}
+
+/* 나눔고딕 폰트 나무기술 Area */
+.firstProjectFont{
+    border-bottom: 1px solid gray;
+    padding: 53px 0 108px 0;
+    background-color: #41633E;
+    color: #fff;
+    text-align: left;
+
+}
+.firstProjectFont .inner{
+    width: 1180px;
+    margin: 0 auto;
+}
+.firstProjectFont .fontArea{}
+
+.firstProjectFont .fontArea .namuFont{
+    padding-top: 40px;
+    font-family: 'Nanum Gothic', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 229px; */
+}
+.firstProjectFont .fontArea .namuFont strong{
+    font-weight: 600;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+}
+.firstProjectFont .fontArea .namuFont p{
+    width: 100%;
+    font-size: 22px;
+    line-height: 1.4;
+    text-align: left;
+}
+.firstProjectFont .fontArea .namuFont .firstNanum{
+    font-weight: 300;
+}
+.firstProjectFont .fontArea .namuFont p:nth-child(2){
+    font-weight: 600;
+    margin: 25px 0;
+}
+.firstProjectFont .fontArea .namuFont p:nth-child(3){
+    font-weight: 900;
+}
+.firstProjectColor{
+    padding: 53px 0 76px 0;
+    border-bottom: 1px solid #8E8E8E;
+}
+/* 나눔고딕 폰트 나무기술 Area End*/
+
+/* 나눔고딕 컬러 나무기술 Area */
+.firstProjectColor .inner{
+    width: 1180px;
+    margin: 0 auto;
+}
+.firstProjectColor .color1{
+    display: flex;
+    justify-content: space-between;
+}
+.firstProjectColor .color1 .nanum{
+    margin-top: 108px;
+    font-size: 24px;
+    font-family: 'MinSans-Regular';
+    line-height: 1.3;
+}
+.firstProjectColor .color1 .colorWrap{
+    width: 580px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.firstProjectColor .color1 .colorWrap div{
+    width: 160px;
+    height: 122px;
+}
+.firstProjectColor .color1 .colorWrap strong{
+    font-family: 'MinSans-Regular';
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    padding-top: 8px;
+    box-sizing: border-box;
+}
+.firstProjectColor .color1 .colorWrap .colorBox1{}
+
+.firstProjectColor .color1 .colorWrap > div >div {
+    width: 160px;
+    height: 90px;
+}
+
+.firstProjectColor .color1 .colorWrap .colorBox1 .box1{background-color: #3876F2;}
+
+.firstProjectColor .color1 .colorWrap .colorBox2{}
+.firstProjectColor .color1 .colorWrap .colorBox2 .box2{background-color: #022B59;}
+
+.firstProjectColor .color1 .colorWrap .colorBox3{}
+.firstProjectColor .color1 .colorWrap .colorBox3 .box3{background-color: #1C2228;}
+
+.firstProjectColor .color1 .colorWrap .colorBox4{}
+.firstProjectColor .color1 .colorWrap .colorBox4 .box4{background-color: #567090;}
+.firstProjectColor .color1 .colorWrap .colorBox4 .box5{background-color: #516B69;}
+.firstProjectColor .color1 .colorWrap .colorBox4 .box6{background-color: #3B5956;}
+/* 나눔고딕 컬러 나무기술 Area End */
+
+/* 첫번째 페이지 설명 */
+.firstProjectPage{
+    padding-top: 53px;
+}
+.firstProjectPage .inner{
+    display: flex;
+    gap: 111px;
+}
+.firstProjectPage .main{
+    width: 705px;
+    position: relative;
+
+}
+.firstProjectPage .main .mainImg{
+    padding-top: 40px;
+}
+.firstProjectPage .main .mainImg img{
+    display: block;
+}
+.firstProjectPage .main .one{
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    border-radius: 50%;
+    background: #008BD0;
+    display: inline-block;
+    position: relative;
+}
+.firstProjectPage .main .one::before{
+    content: '';
+    width: 100px;
+    height: 2px;
+    background-color: #008BD0;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.firstProjectPage .main .descTxt{
+    display: inline-block;
+}
+.firstProjectPage .main strong{
+    font-size: 20px;
+    font-family: 'MinSans-Regular';
+}
+.firstProjectPage .main p{
+    font-size: 16px;
+    font-family: 'MinSans-Light';
+    line-height: 1.2;
+    padding-top: 4px;
+}
+
+.firstProjectPage .main .desc1{
+    position: absolute;
+    top: 190px;
+    right: 5px;
+    width: 232px;
+    height: 52px;
+}
+.firstProjectPage .main .desc2{
+    position: absolute;
+    top: 410px;
+    right: 5px;
+    width: 232px;
+    height: 52px;
+}
+.firstProjectPage .main .desc3{
+    position: absolute;
+    top: 770px;
+    right: 5px;
+    width: 232px;
+    height: 52px;
+}
+.firstProjectPage .main .desc4{
+    position: absolute;
+    top: 1280px;
+    right: 5px;
+    width: 232px;
+    height: 52px;
+}
+
+.firstProjectPage .sub{
+    width: 916px;
+}
+.firstProjectPage .sub .subImg{
+    padding-top: 40px;
+    font-size: 0;
+    display: flex;
+    gap: 20px;
+}
+.firstProjectPage .sub .subImg img{
+    display: block;
+    height: 100%;
+}
+/* 첫번째 페이지 설명 End */
+
+
+/* secondProject section */
+.secondProject{
+    height: 560px;
+    background-color: rgba(244, 244, 244, 0.7);
+}
+.secondProjectConcept{
+    padding: 55px 0 80px 0;
+    box-sizing: border-box;
+}
+.secondProjectConcept .inner{
+    width: 1180px;
+    margin: 0 auto;
+}
+.secondProjectConcept .conceptArea .circle{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.secondProjectConcept .conceptArea .circle.con4{
+    border: 2px solid rgba(198, 198, 198, 0.7);
+}
+.secondProjectConcept .conceptArea .circle.con5{
+    border: 4px dotted black;
+}
+.secondProjectConcept .conceptArea .circle.con6{
+    border: 15px outset #E5F9B7;
+}
+.secondProjectConcept .conceptArea em{
+    font-size: 30px;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 500;
+}
+.secondProjectConcept .conceptArea strong{
+    padding-top: 26px;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    font-family: 'MinSans-Regular';
+    font-size: 26px;
+}
+.secondProjectConcept .conceptArea .concept4{
+    position: relative;
+}
+.secondProjectConcept .conceptArea .concept4 em{
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 30px);
+    transform: translate(-50%, -50%);
+}
+
+.secondProjectConcept .conceptArea .concept5{
+    position: relative;
+}
+.secondProjectConcept .conceptArea .concept5 em{
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 30px);
+    transform: translate(-50%, -50%);
+}
+
+.secondProjectConcept .conceptArea .concept6{
+    position: relative;
+}
+.secondProjectConcept .conceptArea .concept6 em{
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 30px);
+    transform: translate(-50%, -50%);
+}
+
+.secondProjectFontColor {
+    border: 1px solid gray;
+}
+.secondProjectFontColor h4{}
+.secondProjectFontColor .inner{}
+.secondProjectFontColor{
+    padding: 53px 0 108px 0;
+    background-color: #41633e;
+    color: #fff;
+}
+.secondProjectFontColor .inner{
+    width: 1180px;
+    margin: 0 auto;
+}
+.secondProjectFontColor strong{
+    display: block;
+    font-size: 28px;
+    font-weight: 600;
+}
+.secondProjectFontColor p{
+    font-size: 22px;
+    line-height: 1.4;
+}
+.secondProjectFontColor .han1,
+.secondProjectFontColor .noto1{}
+.secondProjectFontColor .hangangFont{
+    font-family: 'SeoulHangangM';
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+.secondProjectFontColor .hangangFont strong{
+    display: flex;
+    align-items: center;
+}
+.secondProjectFontColor .hangangFont .han1{}
+.secondProjectFontColor .hangangFont .han2{
+    font-weight: 600;
+    margin-top: 25px;
+}
+.secondProjectFontColor .hangangFont p{}
+
+.secondProjectFontColor .notoFont{
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    gap: 266px;
+    padding-top: 86px;
+}
+.secondProjectFontColor .notoFont strong{
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    align-items: center;
+}
+.secondProjectFontColor .notoFont p{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.secondProjectFontColor .notoFont .noto1{font-weight: 300;}
+.secondProjectFontColor .notoFont .noto2{
+    margin-top: 25px;
+}
+.secondProjectFontColor .notoFont .noto3{
+    font-weight: 500;
+    margin: 25px 0;
+}
+.secondProjectFontColor .notoFont .noto4{font-weight: 900;}
+
+.secondColor{
+    padding: 53px 0 76px 0;
+    border-bottom: 1px solid #8E8E8E;
+}
+.secondColor .inner{
+    width: 1180px;
+    margin: 0 auto;
+}
+.secondColor .colorArea{}
+.secondColor .colorArea .seoulColor{
+    display: flex;
+    justify-content: space-between;
+}
+.secondColor .colorArea .seoulColor .hangang{
+    margin-top: 108px;
+    font-size: 24px;
+    font-family: 'MinSans-Regular';
+    line-height: 1.3;
+}
+.secondColor .colorArea .colorWrap{
+    width: 580px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    text-align: center;
+}
+.secondColor .colorArea .colorWrap div{
+    width: 160px;
+    height: 122px;
+}
+.secondColor .colorArea .colorWrap strong{
+    font-family: 'MinSans-Regular';
+    font-size: 18px;
+    display: inline-block;
+    padding-top: 8px;
+    box-sizing: border-box;
+}
+.secondColor .colorArea .colorWrap .colorBox1{}
+
+.secondColor .colorArea .colorWrap > div >div {
+    width: 160px;
+    height: 90px;
+}
+.secondColor .colorArea .colorWrap .colorBox1 .box5{background-color: #38924A;}
+.secondColor .colorArea .colorWrap .colorBox2 .box6{background-color: #BD1137;}
+.secondColor .colorArea .colorWrap .colorBox3 .box7{background-color: #D89A64;}
+.secondColor .colorArea .colorWrap .colorBox4 .box8{background-color: #008BD0;}
+.secondColor .colorArea .colorWrap .colorBox5 .box9{background-color: #3449BF;}
+.secondColor .colorArea .colorWrap .colorBox6 .box10{background-color: #000000;}
+
+
+.secondProjectPage{
+    padding-top: 53px;
+}
+.secondProjectPage .inner{
+    display: flex;
+    gap: 411px;
+}
+
+.secondProjectPage .main .mainImg{
+    padding-top: 40px;
+}
+.secondProjectPage .main .mainImg img{
+    width: 420px;
+    height: 100%;
+    border: 1px solid #D1D1D1;
+}
+.secondProjectPage .main .one{
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    border-radius: 50%;
+    background: #008BD0;
+    display: inline-block;
+    position: relative;
+}
+.secondProjectPage .main .one::before{
+    content: '';
+    width: 100px;
+    height: 2px;
+    background-color: #008BD0;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.secondProjectPage .main .descTxt{
+    display: inline-block;
+}
+.secondProjectPage .main strong{
+    font-size: 20px;
+    font-family: 'MinSans-Regular';
+}
+.secondProjectPage .main p{
+    font-size: 16px;
+    font-family: 'MinSans-Light';
+    line-height: 1.2;
+    padding-top: 4px;
+}
+.secondProjectPage .main{
+    position: relative;
+}
+.secondProjectPage .main .desc1{
+    position: absolute;
+    top: 250px;
+    left: 503px;
+    width: 232px;
+    height: 52px;
+}
+.secondProjectPage .main .desc2{
+    position: absolute;
+    top: 410px;
+    left: 503px;
+    width: 232px;
+    height: 52px;
+}
+.secondProjectPage .main .desc3{
+    position: absolute;
+    top: 670px;
+    left: 503px;
+    width: 232px;
+    height: 52px;
+}
+
+
+.secondProjectPage .sub{}
+.secondProjectPage .sub h4{}
+.secondProjectPage .sub .subImg{
+    padding-top: 40px;
+}
+.secondProjectPage .sub .subImg img{
+    width: 420px;
+    height: 100%;
+    border: 1px solid #D1D1D1;
+}
+
+.secondProjectPage .sub .one{
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    border-radius: 50%;
+    background: #008BD0;
+    display: inline-block;
+    position: relative;
+}
+.secondProjectPage .sub .one::before{
+    content: '';
+    width: 100px;
+    height: 2px;
+    background-color: #008BD0;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.secondProjectPage .sub{
+    position: relative;
+}
+.secondProjectPage .sub .desc5{
+    position: absolute;
+    width: 312px;
+    height: 52px;
+    top: 145px;
+    left: 503px;
+}
+.secondProjectPage .sub .desc6{
+    position: absolute;
+    width: 312px;
+    height: 52px;
+    top: 300px;
+    left: 503px;
+}
+.secondProjectPage .sub .desc7{
+    position: absolute;
+    width: 312px;
+    height: 52px;
+    top: 500px;
+    left: 503px;
+}
+
+.secondProjectPage .sub .descTxt{
+    display: inline-block;
+}
+.secondProjectPage .sub strong{
+    font-size: 20px;
+    font-family: 'MinSans-Regular';
+}
+.secondProjectPage .sub p{
+    font-size: 16px;
+    font-family: 'MinSans-Light';
+    line-height: 1.2;
+    padding-top: 4px;
+}
+
+
+
+/* thirdProject section */
+.thirdProject{
+    height: 560px;
+    background: rgba(244, 244, 244, 0.7);
+}
+.thirdProjectConcept{
+    padding: 55px 0 80px 0;
+    box-sizing: border-box;
+}
+.thirdProjectConcept .inner{
+    width: 1180px;
+    margin: 0 auto;
+}
+.thirdProjectConcept .conceptArea .circle{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.thirdProjectConcept .conceptArea .circle.con7{
+    border: 2px solid rgba(198, 198, 198, 0.7);
+}
+.thirdProjectConcept .conceptArea .circle.con8{
+    border: 4px dotted black;
+}
+.thirdProjectConcept .conceptArea .circle.con9{
+    border: 15px outset #E5F9B7;
+}
+.thirdProjectConcept .conceptArea em{
+    font-size: 30px;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 500;
+}
+.thirdProjectConcept .conceptArea strong{
+    padding-top: 26px;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    font-family: 'MinSans-Regular';
+    font-size: 26px;
+}
+.thirdProjectConcept .conceptArea .concept7{
+    position: relative;
+}
+.thirdProjectConcept .conceptArea .concept7 em{
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 30px);
+    transform: translate(-50%, -50%);
+}
+
+.thirdProjectConcept .conceptArea .concept8{
+    position: relative;
+}
+.thirdProjectConcept .conceptArea .concept8 em{
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 30px);
+    transform: translate(-50%, -50%);
+}
+
+.thirdProjectConcept .conceptArea .concept9{
+    position: relative;
+}
+.thirdProjectConcept .conceptArea .concept9 em{
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 30px);
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+/* cursor */
+
+/* .followCursor {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background: #E0F6AD;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    opacity: 0.7;
+} */
+
+/* transition Section */
+
+/* section h3,
+section h4{
+    opacity: 0;
+    transform: translateY(50%);
+}
+section h3.ani,
+section h4.ani{
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.5s;
+}
+
+
+.important ul li{
+    opacity: 0;
+    transform: translateY(60%);
+}
+.important ul li.on{
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.5s;
+}
+
+.important ul li.on1.on{
+    transition: 0.4s;
+}
+.important ul li.on2.on{
+    transition: 0.6s;
+}
+.important ul li.on3.on{
+    transition: 0.8s;
+}
+
+
+section .conceptArea div{
+    opacity: 0;
+    transform: translateY(60%);
+}
+section .conceptArea div.active{
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.5s;
+}
+section .conceptArea div.active.concept1 {
+    transition: 0.4s;
+}
+section .conceptArea div.active.concept2 {
+    transition: 0.6s;
+}
+section .conceptArea div.active.concept3 {
+    transition: 0.9s;
+}
+
+
+.selfIntroPage .introTxt{
+    opacity: 0;
+    transform: translateX(-50%);
+}
+.selfIntroPage .introTxt.move{
+    opacity: 1;
+    transform: translateX(0);
+    transition: 0.9s
+}; */
+
+/* transition Section End */
